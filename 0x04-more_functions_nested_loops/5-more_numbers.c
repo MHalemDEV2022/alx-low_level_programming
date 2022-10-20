@@ -5,7 +5,7 @@
  *  from 0 to 14, followed by a new line.
  */
 void more_numbers(void)
-i{
+{
 	int i, n;
 
 	for (i = 0; i < 10; i++)
