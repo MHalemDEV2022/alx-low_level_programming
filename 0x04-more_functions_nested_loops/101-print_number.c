@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_number - function that prints an integer.
@@ -19,6 +19,12 @@ void print_number(int n)
 		_putchar('-');
 	}
 
+	if (ItoL == 0)
+	{
+		_putchar('0');
+		
+	}
+
 	P10 = 1;
 	Bool = 1;
 
@@ -27,7 +33,7 @@ void print_number(int n)
 		if (ItoL / (P10 * 10) > 0)
 			P10 *= 10;
 		else
-			Boll = 0;
+			Bool = 0;
 	}
 
 	while (ItoL >= 10)
