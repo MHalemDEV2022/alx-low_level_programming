@@ -1,17 +1,12 @@
 #include "main.h"
-
 /**
  * print_number - function that prints an integer.
  * @n: input integer
  */
-
 void print_number(int n)
 {
-	long P10;
-	int Bool;
-	long ItoL;
-
-	ItoL = n;
+	long P10 = 1, ItoL = n;
+	int Bool = 1;
 
 	if (ItoL < 0)
 	{
@@ -20,14 +15,7 @@ void print_number(int n)
 	}
 
 	if (ItoL == 0)
-	{
 		_putchar('0');
-		
-	}
-
-	P10 = 1;
-	Bool = 1;
-
 	while (Bool)
 	{
 		if (ItoL / (P10 * 10) > 0)
@@ -49,5 +37,4 @@ void print_number(int n)
 			P10 /= 10;
 		}
 	}
-
 }
