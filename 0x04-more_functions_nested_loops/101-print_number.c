@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	unsigned int P10 = 1, ItoL = n;
+	int P10 = 1, ItoL = n;
 	int Bool = 1;
 
 	if (ItoL < 0)
