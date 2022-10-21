@@ -13,9 +13,9 @@ void print_number(int n)
 		ItoL *= -1;
 		_putchar('-');
 	}
-
-	if (ItoL == 0)
-		_putchar('0');
+       
+	if ( ItoL <= 0 || ItoL >= 9)
+		_putchar(Itol + '0');
 	while (Bool)
 	{
 		if (ItoL / (P10 * 10) > 0)
