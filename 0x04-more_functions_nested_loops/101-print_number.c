@@ -5,8 +5,8 @@
  */
 void print_number(int n)
 {
-	long P10 = 1, ItoL = n;
-	int Bool = 1;
+	int P10 = 1, ItoL = n;
+	char Bool = 1;
 
 	if (ItoL < 0)
 	{
