@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	int P10 = 1, ItoL = n;
+	unsigned int P10 = 1, ItoL = n;
 	int Bool = 1;
 
 	if (ItoL < 0)
@@ -13,8 +13,8 @@ void print_number(int n)
 		ItoL *= -1;
 		_putchar('-');
 	}
-       
-	if ( ItoL >= 0 && ItoL <= 9)
+
+	if (ItoL >= 0 && ItoL <= 9)
 		_putchar(ItoL + '0');
 	while (Bool)
 	{
