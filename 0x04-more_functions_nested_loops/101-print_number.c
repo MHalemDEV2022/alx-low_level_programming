@@ -28,8 +28,8 @@ void print_number(int n)
 	{
 		if (P10 == 1)
 		{
-			_putchar(num + '0');
-			ItoL = -1;
+			_putchar(num % 10 + '0');
+			num = -1;
 		}
 		else
 		{
